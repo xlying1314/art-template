@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <!--引入模板引擎:一般用于在网络请求之后，展示相同的多条数据 -->
+<script type="text/javascript" src="lib/template-web.js" ></script>
+</head>
+<body>
+  <div id="ifBox"></div>
+<!--
+   1.逻辑语句---条件语句的使用
+-->
+<script type="text/html" id="personTemplate">
+<ul>
+     {{if sex=="女"}}
+  <li>姓名:{{name}} 女士
+     <ol>
+         <li>最新款的包包</li>
+         <li>你真{{skill}}</li>
+     </ol>
+  </li>
+    {{else if sex=="男"}}
+  <li>姓名:{{name}} 先生
+      <ol>
+          <li>最新款的西装</li>
+          <li>你真{{skill}}</li>
+      </ol>
+  </li>
+  {{/if}}
+</ul>
+</script>
+<script type="text/javascript">
+
+  //定义数据
+  const person1 = {
+      name:"赵丽颖",
+      sex:"女",
+      skill:"可爱"
+  };
+
+  const person2 = {
+      name:"胡歌",
+      sex:"男",
+      skill:"帅气"
+  };
+
+  /**
+   * 利用模板引擎 引用数据填充到模板中
+   *
+   * 参数一：模板id
+   * 参数二：数据
+   */
+  var result =  template("personTemplate",person1);
+  var result2 =  template("personTemplate",person2);
+
+  //将返回的模板结果添加到界面中
+  var ifBox = document.getElementById("ifBox");
+  ifBox.innerHTML = result + result2;
+</script>
+</html>

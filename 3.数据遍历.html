@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .current {
+      margin-left:10px;
+      list-style: none;
+      border:1px solid black;
+    }
+  </style>
+  <script src="./lib/jquery-1.12.4.js"></script>
+  <script src="./lib/template-web.js"></script>
+</head>
+<body>
+  <script type="text/html" id="templateId">
+    <ul>
+     <!-- 遍历brand数组，brand是请求返回数据中的数组 -->
+    {{each brand}}
+         <li>
+            <a href="">{{$value.title}}</a>
+            <ul >
+              {{each $value.text}}
+                   <li class="current"> {{$value}}</li>
+              {{/each}}
+            </ul>
+        </li>
+    {{/each}}
+  </ul>
+  </script>
+  <script>
+      $(function () { 
+         $.ajax({
+           url:'http://git.coding-future.com:3010/list/shopsort',
+           dataType:'json',
+           success (res) {
+             const { data } = res
+            // const { data: {brand}} = res
+             console.log(data);
+             const htmlStr = template('templateId',data)
+             $("body").html(htmlStr)
+           }
+         })
+      })
+  </script>
+</body>
+</html>
+/**
+ * 
+ * @author Petrel&Hongyan_Li
+ * @QQ：158452782
+ * @TEL&&WX：13717685922
+ * @created 2021/09/13 14:58:31
+ * https://gitee.com/xlying1314/art-template
+ */

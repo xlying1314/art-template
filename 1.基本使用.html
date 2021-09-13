@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     img {
+       width:150px;
+     }
+  </style>
+  <!-- 1.引入模板引擎 -->
+  <script src="lib/template-web.js"></script>
+  <!-- 2.创建引擎模板 -->
+  <script type="text/html" id="template">
+      <ul>
+          <li>姓名{{name}}</li>
+          <li>年龄{{age}}</li>
+          <li>电话{{phone}}</li>
+          <!-- 原始值输出即输出带标签形式的内容 -->
+          <li>头像{{@ avator}}</li>
+      </ul>
+</script>
+<!-- 3.模板插入html代码中 -->
+<script>
+  // 获取数据
+  const data = {
+      name:"Petrel",
+      age:"25",
+      phone:"1377777777",
+      avator:"<img src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2F50%2Fv2-7fe2ecb0e02ce14f92e8d6e10c6a3417_hd.jpg&refer=http%3A%2F%2Fpic2.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1634109811&t=df5463cb1adb851d779b071d72008923'>"
+  };
+
+  // 将数据放入模板,并显示到页面中
+  const res = template("template", data);// 此处template代表模板id,data表示要插入的数据
+ 
+  document.write(res) // 显示结构
+</script>
+</head>
+<body>
+  
+</body>
+</html>
+
+

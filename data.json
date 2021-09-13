@@ -1,0 +1,153 @@
+{
+  "status": 200,
+  "message": "获取成功",
+  "data": {
+    "brand": [
+      {
+        "title": "所有品牌",
+        "text": [
+          "全部",
+          "爱肯拿ACANA",
+          "爱旺斯ADVANCE",
+          "AVODerm",
+          "爱诺Eminent",
+          "巴西淘淘TOTAL",
+          "Farmina",
+          "海洋之星FISH4DOGS",
+          "纽顿nutram number",
+          "耐吉斯SOLUTION",
+          "now FRESH",
+          "欧帝亿IMPERIAL PAW",
+          "primo",
+          "生鲜本能Instinct",
+          "天衡宝Natural Balance",
+          "Tikipets"
+        ]
+      },
+      {
+        "title": "A",
+        "text": [
+          "爱肯拿ACANA",
+          "爱旺斯ADVANCE",
+          "AVODerm",
+          "爱诺Eminent"
+        ]
+      },
+      {
+        "title": "B",
+        "text": [
+          "巴西淘淘TOTAL"
+        ]
+      },
+      {
+        "title": "F",
+        "text": [
+          "Farmina"
+        ]
+      },
+      {
+        "title": "H",
+        "text": [
+          "海洋之星FISH4DOGS"
+        ]
+      },
+      {
+        "title": "N",
+        "text": [
+          "纽顿nutram number",
+          "耐吉斯SOLUTION",
+          "now FRESH"
+        ]
+      },
+      {
+        "title": "O",
+        "text": [
+          "欧帝亿IMPERIAL PAW"
+        ]
+      },
+      {
+        "title": "P",
+        "text": [
+          "primo"
+        ]
+      },
+      {
+        "title": "S",
+        "text": [
+          "生鲜本能Instinct"
+        ]
+      },
+      {
+        "title": "T",
+        "text": [
+          "天衡宝Natural Balance",
+          "Tikipets"
+        ]
+      }
+    ],
+    "alt": [
+      {
+        "name": "主要配方：",
+        "title": [
+          "鸡肉",
+          "鱼肉",
+          "禽肉",
+          "羊肉",
+          "鸭肉",
+          "牛肉",
+          "鹿肉",
+          "其他"
+        ]
+      },
+      {
+        "name": "适合体型：",
+        "title": [
+          "全体型",
+          "小型犬",
+          "中型犬",
+          "大型犬"
+        ]
+      },
+      {
+        "name": "适合年龄：",
+        "title": [
+          "全年龄犬",
+          "成犬",
+          "幼犬",
+          "老犬",
+          "怀孕哺乳期犬"
+        ]
+      },
+      {
+        "name": "颗粒大小：",
+        "title": [
+          "标准粒",
+          "小颗粒",
+          "大颗粒"
+        ]
+      },
+      {
+        "name": "重量区间：",
+        "title": [
+          "小包",
+          "大包",
+          "中包",
+          "超小包",
+          "超大包"
+        ]
+      },
+      {
+        "name": "单价：",
+        "title": [
+          "50元以上/斤",
+          "40.1-50元/斤",
+          "30.1-40元/斤",
+          "25.1-30元/斤",
+          "20.1-25元/斤",
+          "15.1-20元/斤",
+          "10.1-15元/斤"
+        ]
+      }
+    ]
+  }
+}
